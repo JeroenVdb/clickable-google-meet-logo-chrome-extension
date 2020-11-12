@@ -1,28 +1,16 @@
 {
-  "name": "Stream Deck Google Meet Extension",
+  "name": "Clickable Google Meet logo",
   "version": "1.0",
-  "description": "Provide communication and functionality between the Stream Deck Google Meet plugin the Google Meet in the browser",
+  "description": "Make the Google Meet logo clickable",
   "manifest_version": 2,
   "permissions": [
-    "tabs",
-    "activeTab",
-    "nativeMessaging",
-    "https://meet.google.com/*"
+    "activeTab"
   ],
-  "background": {
-    "persistent": true,
-    "scripts": [
-      "background.js"
-    ]
-  },
   "content_scripts": [
     {
-      "matches": ["https://meet.google.com/*"],
+      "matches": ["https://meet.google.com/_meet/*", "https://meet.google.com/*"],
       "js": ["contentScript.js"],
       "run_at": "document_idle"
     }
-  ],
-  "browser_action": {
-    "default_icon": "focus.png"
-  }
+  ]
 }

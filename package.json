@@ -1,25 +1,25 @@
 {
-  "name": "nodejs-typescript-starter",
+  "name": "clickable-google-meet-logo",
   "version": "1.0.0",
-  "description": "My personal NodeJS-TypeScript starter",
+  "description": "Make the Google Meet logo clickable",
   "scripts": {
     "test": "mocha --require ts-node/register test/**/*.ts"
   },
   "author": "Jeroen Van den Berghe",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@jeroenvdb/prettier-config": "^1.0.4",
-    "@types/aws-lambda": "^8.10.51",
     "@types/chrome": "0.0.117",
-    "@types/mocha": "^7.0.2",
+    "@types/jest": "^26.0.15",
     "@types/node": "^14.0.5",
-    "@types/ws": "^7.2.6",
-    "mocha": "^7.2.0",
+    "@types/rewire": "^2.5.28",
+    "jest": "^26.6.3",
     "prettier": "^2.0.5",
+    "rewire": "^5.0.0",
+    "ts-jest": "^26.4.4",
     "ts-node": "^8.10.1",
+    "tslib": "^2.0.3",
     "typescript": "^3.9.3"
-  },
-  "dependencies": {
-    "ws": "^7.3.1"
   }
 }
