@@ -2,6 +2,10 @@ function createClickableArea() {
 	const area = document.createElement('a');
 	area.setAttribute('href', createGoogleMeetHomeUrl());
 	area.setAttribute('style', 'position: fixed; width: 400px; height: 64px; z-index: 5000');
+	area.addEventListener('click', (e) => {
+		e.preventDefault();
+		window.location.href = createGoogleMeetHomeUrl();
+	});
 	return area;
 }
 
